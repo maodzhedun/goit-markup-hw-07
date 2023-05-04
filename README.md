@@ -1,3 +1,3 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-HTML + CSS + Flex + SVG + animation + forms
+HTML + CSS + Flex + SVG + animation + forms + adaptiv
