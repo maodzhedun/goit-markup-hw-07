@@ -36,7 +36,7 @@ body {
 .container {
   /* Phone & > */
   
-    width: 100%;
+    /* width: 100%; */
     min-width: 320px;
     max-width: 428px;
     margin-left: auto;
@@ -44,8 +44,8 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   
-    /* outline: 2px solid red;
-    outline-offset: -2px; */
+    outline: 2px solid red;
+    outline-offset: -2px;
     /* width: 100%;
     width: 1158px;
     padding: 0px 15px;
@@ -180,6 +180,7 @@ ul {
 
 .nav-list {
   display: flex;
+  gap: 40px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -191,17 +192,17 @@ ul {
 
 
 @media only screen and (min-width: 768px) {
-   
-    .nav-list .item:not(:last-child) {
-        margin-right: 40px;
-       }
-
      .header-link {
       padding-top: 24px;
       padding-bottom: 24px;
      }  
 }
 
+.site-cont {
+  /* display: flex; */
+  font-style: normal;
+  margin-left: auto;
+}
 
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
@@ -209,11 +210,17 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* margin-left: auto; */
 }
 
 }
 
-.site-nav .link {
+@media only screen and (min-width: 768px) {
+   
+  .contact-list {
+    margin-left: auto;
+  }
+  .site-nav .link {
     color: var(--secondary-bg-color);
   font-style: normal;
   font-weight: 500;
@@ -225,29 +232,17 @@ ul {
   color: var(--action-color);
 }
 
-.site-cont .link {
+  .site-cont .link {
   color: var(--body-text-color);
   font-style: normal;
   transition: color var(--animation-base);
 }
 
-.site-cont .link:hover,
-.site-cont .link:focus {  
-  color: var(--action-color);
-  }
+  .site-cont .link:hover,
+  .site-cont .link:focus {  
+    color: var(--action-color);
+    }
  
-.site-cont {
-  /* display: flex; */
-  font-style: normal;
-  margin-left: auto;
-}
-
-/* .contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-} */
-
 .header-link {
   position: relative;
 }
@@ -278,12 +273,18 @@ ul {
   transform: scaleX(1);
 }
 
+}
+
+
+
 /* Hero */
-.hero-main {
+
+ .hero-main {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -295,19 +296,42 @@ ul {
   background-size: cover;
 }
 
+@media only screen and (min-width: 767px) {
+  .hero-main {
+   padding-top: 188px;
+   padding-bottom: 188px;
+  }
+}
+
 .hero-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  
 
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-bg-color);
+}
+
+@media only screen and (min-width: 767px) {
+   .hero-title {
+    margin-bottom: 36px;
+    max-width: 496px;
+    
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media only screen and (min-width: 1157px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 
 .hero-button {
@@ -337,9 +361,9 @@ ul {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--action-color);
-}
+} */
 
-/* Section */
+/* Section style h2 h3*/
 
 .section-title {
   font-weight: 700;
@@ -361,17 +385,46 @@ ul {
 
 /* Section feature */
 
-.feature-main {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+/* @media only screen and (max-width: 1157px) {
+  .feature-icon-top {
+    display: none;
+  }
+
+  }
+
+  .feature-main {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .feature-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
-.feature-icon-top {
+.section-subtitle {
+  margin-bottom: 8px;
+} 
+
+
+@media only screen and (min-width: 768px) {
+  .feature-list-it {
+  flex-basis: calc((100% - 24px) / 2);
+}
+
+}    
+
+@media only screen and (min-width: 1158px) {
+   .feature-main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+  .feature-icon-top {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,14 +435,24 @@ ul {
   background: var(--light-bg-color);
   border-radius: 4px;
 }
-
 .feature-list-it {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.section-subtitle {
+} */
+
+
+/* .feature-list {
+  display: flex;
+  gap: 24px;
+} */
+
+
+
+
+/* .section-subtitle {
   margin-bottom: 8px;
-}
+}  */
 
 /* Section  What are we doing  */
 
