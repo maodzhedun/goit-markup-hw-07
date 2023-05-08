@@ -44,8 +44,8 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
     /* width: 100%;
     width: 1158px;
     padding: 0px 15px;
@@ -56,7 +56,7 @@ body {
 
   @media only screen and (min-width: 768px) {
     .container {
-      max-width: 736px;
+      max-width: 768px;
     }
   }
 
@@ -106,6 +106,7 @@ ul {
 
 .list {
   list-style: none;
+  
 }
 
 .link {
@@ -119,8 +120,8 @@ ul {
 .header-main {
 
   width: 100%;
-  padding-top: 24px; 
-  padding-bottom: 22px;
+  /* padding-top: 24px; 
+  padding-bottom: 22px; */
 
   border-bottom: 1px solid var(--accent-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -128,11 +129,11 @@ ul {
     /* background-color: darkgrey; */
 }
 
-@media only screen and (min-width:  768px) {
+/* @media only screen and (min-width:  768px) {
   .header-main {
     padding: 24px 0;
   }
-}
+} */
 
 .header-container {
   position: relative;
@@ -209,7 +210,7 @@ ul {
   .contact-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   /* margin-left: auto; */
 }
 
@@ -251,7 +252,7 @@ ul {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: 0;
 
   display: block;
   width: 100%;
