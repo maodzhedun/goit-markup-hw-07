@@ -851,7 +851,7 @@ ul {
   .logo {
     display: flex;
     flex-direction: column;
-    width: 264px;
+    min-width: 264px;
     margin-right: 120px;
   }
 }
@@ -941,13 +941,10 @@ ul {
 
 @media only screen and (min-width: 1158px) {
  .footer-icons  {
-    align-items: flex-start;
+    align-items: center;
     margin-right: 80px;
   }
 }
-/* .footer-icons {
-  margin-right: 80px;
-} */
 
 /**
   |============================
