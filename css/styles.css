@@ -44,6 +44,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   
+    outline: 1px solid olivedrab;
     /* outline: 2px solid red;
     outline-offset: -2px; */
     /* width: 100%;
@@ -66,6 +67,7 @@ body {
   @media only screen and (min-width: 1158px) {
     .container {
       max-width: 1158px;
+      padding: 0px 15px;
     }
   }
 
@@ -420,6 +422,8 @@ ul {
 }
 
 .feature-item {
+  margin-top: 8px;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -450,7 +454,7 @@ ul {
   }
 
 .feature-item {
-  margin-bottom: 8px;
+  
 
   font-weight: 400;
   font-size: 16px;
@@ -1283,6 +1287,7 @@ ul {
 */
 
 .backdrop {
+  overflow: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -1717,6 +1722,6 @@ color: var(--body-text-color);
 
 .mobile-socials {
   display: flex;
-   justify-content: flex-start;
-  gap: 56px; 
+  justify-content: space-between;
+  /* gap: 56px;  */
 }
