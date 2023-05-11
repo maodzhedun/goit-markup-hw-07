@@ -484,6 +484,12 @@ ul {
   letter-spacing: 0.02em;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-subtitle {
+   text-align: center; 
+  }
+}
+
 @media only screen and (max-width: 1157px) {
   .section-subtitle {
   font-family: 'Roboto';
@@ -491,7 +497,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
+  
   letter-spacing: 0.02em;
   text-transform: capitalize;
   }
@@ -685,7 +691,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 72px 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -715,6 +721,12 @@ ul {
   border-radius: 4px;
   color: var(--subtle-text-color);
   transition: color var(--animation-base), border-color var(--animation-base) ;
+}
+
+@media only screen and (max-width: 767px) {
+  .clients-link {
+    width: 190px;
+  }
 }
 
 .clients-link:hover,
@@ -1637,7 +1649,7 @@ ul {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
+  /* padding: 10px; */
   /* color: #fff; */
   text-decoration: none;
 
