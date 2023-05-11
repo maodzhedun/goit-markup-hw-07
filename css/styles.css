@@ -317,7 +317,7 @@ ul {
 
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 429px) {
    .hero-main {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -339,7 +339,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
    .hero-main {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
